@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <title></title>
+  <style>
+body{
+  margin: 0;
+  padding: 0;
+}
+.dropdown-profile{
+  display: flex;
+  flex-direction: column;
+  width: 201px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+  border: solid 1px #e9e9e9;
+  background-color: #ffffff;
+}
+.brief-profile-info-dropdown{
+  display: flex;
+  flex-direction: row;
+  margin-left: 26px;
+  align-self: center;
+}
+.brief-profile-info-dropdown .profile-image-mini-dropdown{
+    object-fit: cover;
+    margin-top: 18.3px;
+    width: 49.2px;
+    height: 49.2px;
+    align-self: center;
+    border-radius: 24.6px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+}
+.brief-profile-content-dropdown{
+  display: flex;
+  flex-direction: column;
+  margin-top: 22.3px;
+  margin-left: 14.8px;
+}
+
+.brief-profile-content-dropdown .brief-profile-name-dropdown{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.27px;
+    color: #2d2d2d;
+    font-family: proxima_novasemibold, sans-serif;
+}
+
+.brief-profile-content-dropdown .brief-profile-position-dropdown{
+    font-size: 11px;
+    letter-spacing: 0.19px;
+    color: #9b9b9b;
+    font-family: proxima_novasemibold, sans-serif;
+}
+.brief-profile-position-dropdown > span{
+  font-weight: 600;
+}
+.dropdown-tabs{
+  margin-top: 12px;
+}
+.dropdown-tabs>div>i{
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    align-self: center;
+}
+
+.dropdown-tabs>div:hover{
+    background-color: #f8f8f8;
+}
+.dropdown-tabs>div>span,.dropdown-tabs>div{
+    padding-left: 22.4px;
+    color: #b8b8b8;
+    font-size: 14px;
+    letter-spacing: 0.24px;
+    font-family: proxima_novasemibold, sans-serif;
+    align-self: center;
+}
+
+.dropdown-tabs .settings>i{
+    background-image: url("Component4.png");
+
+}
+.dropdown-tabs .help>i{
+    background-image: url("Help.png");
+
+}
+.dropdown-tabs .sign-out>i{
+    background-image: url("SignOut.png");
+}
+.settings, .help, .sign-out{
+  display: flex;
+  flex-direction: row;
+  height: 41px;
+}
+.dropdown-tabs> .settings >span{
+  color: #f86d3a;
+}
+  </style>
+  </head>
+  <body>
+  <div class="dropdown-profile">
+    <div class="brief-profile-info-dropdown">
+        <img class="profile-image-mini-dropdown" src="Image2.jpg" alt="#"/>
+        <div class="brief-profile-content-dropdown">
+          <span class="brief-profile-name-dropdown">Luke Hobbs</span>
+          <span class="brief-profile-position-dropdown">Director & CEO at <span>company.co</span></span>
+        </div>
+    </div>
+    <div class="dropdown-tabs">
+      <div class="settings">
+          <i class="fas"> </i>
+          <span>Settings</span>
+      </div>
+      <div class="help">
+          <i class="fas"> </i>
+          <span>Help</span>
+      </div>
+      <div class="sign-out">
+          <i class="fas"> </i>
+          <span>Sign Out</span>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
